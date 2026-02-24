@@ -8,11 +8,14 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
+    #  Add environment here (job level)
+    environment:
+      name: test
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    #  Add AWS credentials 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
@@ -32,16 +35,6 @@ jobs:
     - name: Terraform Plan
       run: terraform plan
 
-    # 🔒 Manual approval step
-    - name: Wait for approval
-      uses: trstringer/manual-approval@v1
-      with:
-        secret: ${{ secrets.GITHUB_TOKEN }}
-        approvers: arpithaoncloud9
-        minimum-approvals: 1
-
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main'
-      environment:
-        name: test
       run: terraform apply
