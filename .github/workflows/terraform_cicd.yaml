@@ -8,10 +8,6 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
-    #  Add environment here (job level)
-    environment:
-      name: test
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -37,4 +33,4 @@ jobs:
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main'
-      run: terraform apply
+      run: terraform apply -auto-approve
