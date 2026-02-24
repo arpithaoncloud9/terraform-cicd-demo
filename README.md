@@ -64,6 +64,12 @@ variable "bucket_name" {
   type = string
 }
 ```
+
+#### **terraform.tfvars**
+```
+bucket_name = "maria-terraform-20260808"
+```
+
 #### **outputs.tf**
 ```
 output "bucket_name" {
@@ -146,7 +152,7 @@ jobs:
       run: terraform apply
 
 ```
-#### Manual approval triggered — deployment awaiting review before proceeding.
+### Manual approval triggered — deployment awaiting review before proceeding.
 
 <img width="590" height="328" alt="Screenshot 2026-02-24 at 4 12 24 PM" src="https://github.com/user-attachments/assets/b7909674-0e1b-4d86-8e85-d0475398733e" />
 
@@ -191,17 +197,17 @@ jobs:
       run: terraform apply -auto-approve
 
 ```
-#### Terraform initialized and validated successfully — configuration is clean and ready for deployment.
+### Terraform initialized and validated successfully — configuration is clean and ready for deployment.
 
 <img width="1036" height="597" alt="Screenshot 2026-02-24 at 4 09 22 PM" src="https://github.com/user-attachments/assets/13663be3-ad88-4703-9118-f525680d1dd0" />
 
 
-#### Terraform Apply completed successfully — S3 bucket provisioned in a fully automated CI/CD pipeline.
+### Terraform Apply completed successfully — S3 bucket provisioned in a fully automated CI/CD pipeline.
 
 <img width="1694" height="1174" alt="image" src="https://github.com/user-attachments/assets/e1587566-f7a1-4c35-a6cf-aec3b80ae122" />
 
 
-#### CI/CD pipeline executed successfully — Terraform workflow completed.
+### CI/CD pipeline executed successfully — Terraform workflow completed.
 
 <img width="1088" height="498" alt="Screenshot 2026-02-24 at 4 05 15 PM" src="https://github.com/user-attachments/assets/a184871d-0151-4b8b-b70a-920fa0d47ffe" />
 
