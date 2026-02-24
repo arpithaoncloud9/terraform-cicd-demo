@@ -37,7 +37,7 @@ jobs:
       uses: trstringer/manual-approval@v1
       with:
         secret: ${{ secrets.GITHUB_TOKEN }}
-        approvers: maria
+        approvers: arpithaoncloud9
         minimum-approvals: 1
 
     - name: Terraform Apply
