@@ -1,1 +1,1 @@
-bucket_name = "maria-terraform-20260808"
+bucket_name = "maria-terraform-202608"
