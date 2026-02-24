@@ -212,6 +212,10 @@ jobs:
 <img width="1088" height="498" alt="Screenshot 2026-02-24 at 4 05 15 PM" src="https://github.com/user-attachments/assets/a184871d-0151-4b8b-b70a-920fa0d47ffe" />
 
 
+### S3 bucket created automatically through the Terraform Apply stage.
+
+<img width="802" height="209" alt="Screenshot 2026-02-24 at 4 53 23 PM" src="https://github.com/user-attachments/assets/c4fc6a2b-94b7-4952-80ce-9e3754b2c0b7" />
+
 
 ### Outcome:
 The project successfully automates Terraform deployments using GitHub Actions. Whenever I push code, the pipeline runs Terraform commands and applies the changes automatically.
